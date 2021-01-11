@@ -11,4 +11,5 @@ $application = new Application();
 
 $application->add(new ListCommand());
 
+$application->setDefaultCommand('list', true);
 $application->run();
