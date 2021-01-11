@@ -1,0 +1,55 @@
+{
+    "name": "mitsuru793/list-project-sorting-by-modified",
+    "description": "List project sorting by modified.",
+    "type": "library",
+    "homepage": "https://github.com/mitsuru793/php-list-project-sroting-by-modified",
+    "license": "MIT",
+    "keywords": [
+        "git",
+        "list",
+        "ls",
+        "modified",
+        "sort"
+    ],
+    "authors": [
+        {
+            "name": "mitsuru793",
+            "email": "mitsuru793@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "bin": ["bin/list-project-sorting-by-modified"],
+    "scripts": {
+        "test": "phpunit --color=always",
+        "analyze": "phpstan analyze ./src"
+    },
+    "require": {
+        "illuminate/collections": "^8.18",
+        "symfony/finder": "^5.2",
+        "nesbot/carbon": "^2.43"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5",
+        "symfony/var-dumper": "^5.2",
+        "phpstan/phpstan": "^0.12.59",
+        "symfony/console": "^5.2",
+        "mitsuru793/file-constructor": "^0.0.1",
+        "symfony/filesystem": "^5.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "ListProjectSortingByModified\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "UnitTest\\": "tests/unit/",
+            "TestHelper\\": "tests/helper/"
+        }
+    },
+    "config": {
+        "platform": {
+            "php": "7.4"
+        }
+    }
+}
